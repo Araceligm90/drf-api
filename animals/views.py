@@ -8,6 +8,6 @@ class AnimalList(generics.ListAPIView):
     serializer_class = AnimalSerializer
 
 
-class AnimalDetail(generics.RetrieveAPIView):
+class AnimalDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Animal.objects.all()
     serializer_class = AnimalSerializer
