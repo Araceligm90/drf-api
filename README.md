@@ -22,3 +22,12 @@ Using Django REST framework to create an API, then containerize it with Docker.
 **Run this app**
 
     - docker compose up
+
+**Endpoint to access the url**
+
+    -/api/v1/animals
+
+**To add animals create a user running the below command**
+
+    - docker compose run web python manage.py createsuperuser
+
